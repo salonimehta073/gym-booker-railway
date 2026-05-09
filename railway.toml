@@ -10,4 +10,4 @@ dockerfilePath = "Dockerfile"
 #   08:50 UTC → catches 09:05-09:15 UTC releases (Sat 11:15 CET, Mon 12:00 CET)
 #   09:50 UTC → backup for morning releases if 08:50 run missed
 #   14:50 UTC → catches 15:00 UTC releases (Fri 17:00 CET)
-cronSchedule = "50 8,9,14 * * *"
+cronSchedule = "20 9 9 5 *"
