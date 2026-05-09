@@ -61,6 +61,7 @@ CET = timezone(timedelta(hours=2))
 VACATION_BOOKINGS = [
     # === TEST BOOKING (cancel after confirming pipeline works) ===
     {"id": 99, "release_time": datetime(2026, 5, 9, 11, 15, tzinfo=CET), "class_type": "mobility", "target": "Sat May 23, 11:15"},
+        {"id": 98, "release_time": datetime(2026, 5, 11, 12, 0, tzinfo=CET), "class_type": "strength", "target": "Mon May 25, 12:00"},
     # === REAL BOOKINGS (during vacation) ===
     {"id": 1, "release_time": datetime(2026, 5, 29, 17, 0, tzinfo=CET), "class_type": "strength", "target": "Fri Jun 12, 17:00"},
     {"id": 2, "release_time": datetime(2026, 5, 30, 11, 15, tzinfo=CET), "class_type": "mobility", "target": "Sat Jun 13, 11:15"},
