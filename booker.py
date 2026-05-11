@@ -109,7 +109,7 @@ def find_next_booking():
         if status.get(bid, {}).get("booked"):
             continue
         # Accept bookings releasing within next 15 min (gives cron delay buffer)
-        if booking["release_time"] <= now + timedelta(minutes=15) and booking["release_time"] >= now - timedelta(minutes=5):
+        if booking["release_time"] <= now + timedelta(minutes=30) and booking["release_time"] >= now - timedelta(minutes=5):
             return booking
     return None
 
